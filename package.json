@@ -1,0 +1,20 @@
+{
+  "name": "qa-projeto-integrador",
+  "version": "1.0.0",
+  "description": "Projeto Integrador QA",
+  "main": "index.js",
+  "scripts": {
+    "cypress:web": "npx cypress open",
+    "cypress:headless": "npx cypress run --browser electron"
+  },
+  "author": "Thales Henrique",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+  "nonGlobalStepDefinitions": false,
+  "step_definitions": "cypress/e2e/step-definitions/**/"
+}
+}
